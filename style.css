@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+}
+ body {
+  font-family: 'Manrope', sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h1 {
+    color: #2e7d32;
+    font-size: 32px;
+  }
+  
+  button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+  }
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: 40px auto;
+  }
+  
+  .tab:nth-child(1) { background: #2F3E2E; }
+.tab:nth-child(2) { background: #3F5A3F; }
+.tab:nth-child(3) { background: #5C7F53; }
+.tab:nth-child(4) { background: #7FA968; color: #1a1a1a; }
+.tab:nth-child(5) { background: #A8C48A; color: #1a1a1a; }
+.tab {
+    color: #ffffff;
+    padding: 20px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: left;
+    transition: transform 0.2s;
+  }
+  
+  .tab:hover {
+    transform: scale(1.02);
+  }
+  .branch {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: auto;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .section {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .section h2 {
+    color:  #2e7d32;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1a1a1a;
+  }
+  .lotus-wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .lotus-wrapper .lotus-big {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+  }
+  .lotus-hot {
+    position: absolute;
+    width: 130px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #00270a;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  
+  .lotus-tg {
+    top: 42%;
+    left: 40%;
+  }
+  
+  .lotus-vk {
+    top: 80%;
+    left: 45%;
+  }
+  /* ===== АДАПТИВ ДЛЯ ТЕЛЕФОНА ===== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .tabs {
+    max-width: 100%;
+    margin: 24px auto;
+  }
+
+  .tab {
+    padding: 16px 18px;
+    font-size: 15px;
+  }
+
+  .section {
+    margin: 50px auto;
+    padding: 0 4px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .section p {
+    font-size: 16px;
+  }
+
+  .branch {
+    height: 70vh;
+    opacity: 0.5;
+  }
+
+  .lotus-big {
+    width: 220px;
+  }
+
+  .lotus-hot {
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+  }
+}
+.lotus-top {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 120px auto -20px auto;
+}
+
+@media (max-width: 768px) {
+  .lotus-top {
+    width: 70px;
+    margin-bottom:  80px auto -20px auto;
+  }
+}
+.before-after {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.before-after img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.before-after-caption {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #3F5A3F;
+  font-weight: 600;
+}
+.fan {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Адаптив под телефон */
+@media (max-width: 768px) {
+  .before-after img {
+    width: 100%;
+  }
+
+  .before-after-caption {
+    gap: 30px;
+    font-size: 14px;
+  }
+}
+.header-block {
+  position: relative;
+  text-align: center;
+}
+
+.fan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: auto;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.header-block h1 {
+  position: relative;
+  z-index: 1;
+}
